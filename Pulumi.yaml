@@ -1,0 +1,6 @@
+name: MyPulumiProject
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+description: To create aws VPC

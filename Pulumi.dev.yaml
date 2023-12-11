@@ -1,0 +1,17 @@
+config:
+  MyPulumiProject:MAILGUN_API_KEY: cfb3e65c1707ede33768faf55fe2c9f7-30b58138-ecfeb220
+  MyPulumiProject:MAILGUN_DOMAIN: demo.ashutoshraval.com
+  MyPulumiProject:amiID: ami-0919c0be38cc828e3
+  MyPulumiProject:certificate_arn: arn:aws:acm:us-east-1:372558015288:certificate/80c10264-1332-4402-8793-d04cda2da80b
+  MyPulumiProject:cidr: "10.0"
+  MyPulumiProject:cidrEnd: 0/24
+  MyPulumiProject:hostedZone: Z04746393Q1DZ4HT4DRYL
+  MyPulumiProject:internetGatewayName: my-igw
+  MyPulumiProject:privateRouteTableName: private-route-table
+  MyPulumiProject:publicRouteCidrBlock: 0.0.0.0/0
+  MyPulumiProject:publicRouteTableName: public-route-table
+  MyPulumiProject:vpcCidr: 10.0.0.0/16
+  MyPulumiProject:vpcName: my-vpc
+  aws:profile: dev
+  aws:region: us-east-1
+  gcp:project: devcloud-406023
