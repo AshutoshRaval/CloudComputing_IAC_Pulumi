@@ -312,6 +312,7 @@ azs.then((az) => {
     name: "Your_Name",
     username: "Your_UserName",
     password: "Your_Password", 
+
     parameterGroupName: dbParameterGroup.name,
     skipFinalSnapshot: true,
     vpcSecurityGroupIds: [dbSecurityGroup.id],

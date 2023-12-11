@@ -1,8 +1,9 @@
 config:
+
   MyPulumiProject:MAILGUN_API_KEY: Your MailGun or domain provider key
   MyPulumiProject:MAILGUN_DOMAIN: Your_Domain
   MyPulumiProject:amiID: ami-ID
-  MyPulumiProject:certificate_arn:certificate ID
+  MyPulumiProject: certificate_arn:certificate ID
   MyPulumiProject:cidr: "10.0"
   MyPulumiProject:cidrEnd: 0/24
   MyPulumiProject:hostedZone: Hosted Zone Id
