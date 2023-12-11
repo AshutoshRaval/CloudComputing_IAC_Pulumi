@@ -294,9 +294,6 @@ azs.then((az) => {
   const dbParameterGroup = new aws.rds.ParameterGroup("db-parameter-group", {
     family: "mariadb10.6", 
     description: "Custom Parameter Group for MariaDB",
-    // parameters: [
-    //     { name: "RDS_Grp_PARAM", value: "TestRDS" }
-    // ],
   });
 
   // const selectedPrivateSubnet = privateSubnetIds[0];
@@ -312,9 +309,10 @@ azs.then((az) => {
     engine: "mariadb", 
     instanceClass: "db.t2.micro",
     allocatedStorage: 20,
-    name: "csye6225",
-    username: "csye6225",
-    password: "root1234", 
+    name: "Your_Name",
+    username: "Your_UserName",
+    password: "Your_Password", 
+
     parameterGroupName: dbParameterGroup.name,
     skipFinalSnapshot: true,
     vpcSecurityGroupIds: [dbSecurityGroup.id],
@@ -453,16 +451,6 @@ azs.then((az) => {
         matcher: "200",
       },
     });
-  // const webAppListener  = new aws.lb.Listener("webAppListener", {
-  //   loadBalancerArn: webAppAlb.arn,
-  //   port: 80,
-  //   defaultActions: [
-  //     {
-  //       type: "forward",
-  //       targetGroupArn: webAppTg.arn,
-  //     },
-  //   ],
-  // });
 
     // HTTPS Listener for the Application Load Balancer
 const webAppHttpsListener = new aws.lb.Listener("webAppHttpsListener", {
